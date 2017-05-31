@@ -1,12 +1,8 @@
 # coding: utf-8
 
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'smart_insight_logging_layout/version'
-
 Gem::Specification.new do |spec|
   spec.name          = 'smart_insight_logging_layout'
-  spec.version       = SmartInsightLoggingLayout::VERSION
+  spec.version       = File.read(File.join(File.dirname(__FILE__), "VERSION")).strip
   spec.authors       = ['Adam Luzsi']
   spec.email         = ['adamluzsi@gmail.com']
 
