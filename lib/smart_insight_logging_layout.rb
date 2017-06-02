@@ -68,12 +68,12 @@ class SmartInsightLoggingLayout < ::Logging::Layout
 
   def exception_message_by(exception)
     {
-      error:
-        {
-          :class => exception.class.name,
-          :message => exception.message,
-          :backtrace => exception.backtrace.first(20)
-        }
+      :message => exception.message,
+      :error => {
+        :class => exception.class.name,
+        :message => exception.message,
+        :backtrace => exception.backtrace.first(20)
+      }
     }
   end
 

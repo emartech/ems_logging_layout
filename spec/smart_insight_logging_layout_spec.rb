@@ -69,6 +69,7 @@ RSpec.describe SmartInsightLoggingLayout do
       before { message.set_backtrace(backtrace) }
 
       it { is_expected.to json_include 'error' => { 'class' => message.class.to_s, 'message' => message.message, 'backtrace' => message.backtrace } }
+      it { is_expected.to json_include 'message' => message.message }
 
       context 'when the exception has a long backtrace' do
         let(:backtrace) { 1.upto(25).map { |counter| "*line##{counter}*" } }
