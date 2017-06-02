@@ -20,6 +20,13 @@ Or install it yourself as:
 
     $ gem install smart_insight_logging_layout
 
+## How to use
+
+```ruby
+layout = SmartInsightLoggingLayout.new(context: { environment: ENV['RACK_ENV'] })
+appender = Logging.appenders.stdout(layout: layout)
+Logging.logger.root.appenders = [appender]
+```
 
 ## Development
 
