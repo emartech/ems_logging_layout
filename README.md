@@ -1,5 +1,7 @@
 # SmartInsightLoggingLayout
 
+[![Build Status](https://travis-ci.org/emartech/smart_insight_logging_layout.svg?branch=master)](https://travis-ci.org/emartech/smart_insight_logging_layout)
+
 SmartInsight Logging layout for unifiy logging conventions between services.
 
 ## Installation
