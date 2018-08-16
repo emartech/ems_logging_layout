@@ -5,10 +5,11 @@ Gem::Specification.new do |spec|
   spec.version       = File.read(File.join(File.dirname(__FILE__), 'VERSION')).strip
   spec.authors       = ['Adam Luzsi']
   spec.email         = ['adamluzsi@gmail.com']
+  spec.license       = 'MIT'
 
   spec.summary       = 'SmartInsight Logging Layout'
   spec.description   = 'SmartInsight Logging Layout'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = 'https://github.com/emartech/smart_insight_logging_layout"
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
