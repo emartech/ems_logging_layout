@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'SmartInsight Logging Layout'
   spec.description   = 'SmartInsight Logging Layout'
-  spec.homepage      = 'https://github.com/emartech/smart_insight_logging_layout"
+  spec.homepage      = 'https://github.com/emartech/smart_insight_logging_layout'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
